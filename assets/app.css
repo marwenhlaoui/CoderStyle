@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+body{
+/*font-family: 'Russo One', sans-serif;*/
+}
+#logo img{    max-height: 3.5rem;}
+a{    color: #ffdd57;}
+.select:after {
+    border-color:#757575; 
+}
+.hide{display: none;}
+.cmd-code{min-height: 600px}
+.is-danger{color: #F44336;}
+

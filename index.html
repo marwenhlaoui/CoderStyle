@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CoderStyle</title>
+<!-- bulma cdn --> 
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
+<!-- fontawesome cdn --> 
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- coderstyle css --> 
+<link rel="stylesheet" type="text/css" href="dist/css/tmp/cs-monokai.min.css" id="stylefile">
+<!-- app css --> 
+<link rel="stylesheet" type="text/css" href="assets/app.css">
+</head>
+<body class="layout-documentation page-elements">
+<div class="container">
+	<nav class="nav">
+		<div class="nav-left"></div>
+
+		<div class="nav-center"> 
+			<a class="nav-item is-brand" href="#" id="logo"> 
+				<img src="assets/coderstyle-logo.png" alt="CoderStyle: a modern JS Code style">
+			</a>
+		</div>
+
+		<span id="nav-toggle" class="nav-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+
+		<div id="nav-menu" class="nav-right nav-menu">
+			<a class="nav-item" href="https://github.com/marwenhlaoui">
+		      <span class="icon">
+		        <i class="fa fa-github"></i>
+		      </span>
+		    </a>
+		</div>
+	</nav>
+
+</div>
+
+<section class="hero is-warning">
+	<div class="hero-body">
+		<div class="container">
+			<div class="columns is-vcentered">
+				<div class="column">
+					<h1 class="title">CoderStyle </h1>
+					<p class="subtitle">
+						The simplest <strong>syntax highlighting</strong> for the Web
+					</p>
+				</div> 
+			</div>
+		</div>
+	</div>
+
+	<div class="hero-foot">
+		<div class="container">
+			<nav class="tabs is-boxed">
+				<ul class="listpagelink">
+					<li class="is-active">
+						<a href="#overview">Overview</a>
+					</li> 
+					<li class="">
+						<a href="#documentation">Documentation</a>
+					</li> 
+					<li class="">
+						<a href="#">Download</a>
+					</li> 
+				</ul>
+			</nav>
+		</div>
+		
+	</div>
+
+	</section> 
+
+
+	<section class="section listpagecontent">
+		<div class="container is-active" id="overview">
+			<h2 class="title">Overview</h2>
+			<h3 class="subtitle">
+				Version <strong>v0.1</strong> are available now
+			</h3> 
+			<hr> 
+			<div class="content">
+				<div class="columns">
+					<div class="column is-8 cmd-code">
+
+					<div id="demoHtml" cs-lang="html" class="coderStyle loadcode">
+<!-- form by Bootstrap -->
+<form class="form-horizontal">
+  <fieldset>
+    <legend>Legend</legend>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+      <div class="col-lg-10">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Checkbox
+          </label>
+        </div>
+      </div>
+    </div> 
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+					</div>
+					<div  id="demoCss" cs-lang="css" class="coderStyle loadcode hide">
+/* try css */
+@import 'css-coderstyle.css';
+
+html ::selection { background: #3C4043; }
+.jscode ::-moz-selection { background: #3C4043; }
+.jscode ::selection { background: #3C4043; } 
+
+.jscode {
+    padding: 0.5em;
+    background: #141414;
+    color: white;
+    overflow: auto;
+    height: 100%; 
+    border: 3px solid transparent; 
+} 
+.jscode-tag{
+  color: #AC885B;
+}  
+.jscode-attr { 
+  color: #E0C589;
+} 
+.jscode-params{
+  color: #8F9D6A;
+}  
+					</div>
+
+					</div>
+					<div class="column is-4">   
+						<div class="field is-horizontal">
+						  <div class="field-label is-normal">
+						    <label class="label">Templates</label>
+						  </div>
+						  <div class="field-body">
+						    <div class="field is-grouped">
+						      <p class="control">
+							    <span class="select">
+							      <select id="load-template">
+									<option value="cs-monokai">Monokai</option>
+									<option value="cs-eiffel">Eiffel</option>
+									<option value="cs-solarized-light">Solarized (light)</option>
+									<option value="cs-twilight">Twilight</option>
+							      </select>
+							    </span>
+						      </p>
+						    </div> 
+						  </div>
+						</div>
+						<div class="field is-horizontal">
+						  <div class="field-label is-normal">
+						    <label class="label">Languages</label>
+						  </div>
+						  <div class="field-body">
+						    <div class="field is-grouped">
+						      <p class="control">
+							    <span class="select">
+							      <select id="load-language">
+							        <option value="html">html</option> 
+							        <option value="css">css</option> 
+							      </select>
+							    </span>
+						      </p>
+						    </div> 
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+		<div class="container" id="documentation">
+			<h2 class="title">Documentation</h2>
+			<h3 class="subtitle">
+				Created for everyone, everywhere. Is a free and open source forever
+			</h3> 
+			<hr> 
+			<div class="content">
+				<h4>Quick start</h4>
+				<p><strong>CoderStyle</strong> is syntax highlighting project for web developper , very easy to include and integrate in your awesome web application .
+				<br><b>Last version </b>: <span>v0.1</span>
+				<br><b>Languages supported </b>: <span>html</span> , <span>css</span>
+				<br><b>Templates available </b>: <span>Monokai</span> , <span>Eiffel</span> , <span>Solarized</span> , <span>Twilight</span> 
+				</p>
+
+				<h4>Install</h4>
+				<p>
+					Very easy to include in your application , just <a href="https://github.com/marwenhlaoui/LoadImg/archive/master.zip">download</a> or clone from github
+
+					<div class="coderStyle">git clone https://github.com/marwenhlaoui/CoderStyle.git </div>
+				</p>
+				
+<hr>
+				<h4>Using</h4>
+				<p>You will need to include the template <code>cs-monokai.min.css</code> and the script<code>coderstyle.min.js</code> files you downloaded or by cdn in your layout or pages. 
+				<div class="coderStyle" cs-lang="html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	...
+	<!-- coderstyle css template monokai -->
+	<link rel="stylesheet" type="text/css" href="dist/css/tmp/cs-monokai.min.css">
+	...
+&lt;/head&gt;
+&lt;body&gt;
+	...
+	<!-- JQueryCDN-->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	...
+	<!-- coderstyle js -->
+	<script type="text/javascript" src="dist/js/js-coderstyle.js" ></script>
+	...
+&lt;/body&gt;
+&lt;/html&gt;
+				</div>
+				</p><hr>
+				<h4>Creators</h4>
+				<p>
+					<b>Marwen Hlaoui</b>
+					<ul>
+						<li><a href="http://marwenhlaoui.me">Official website</a></li>
+						<li><a href="http://github.com/marwenhlaoui">github</a></li>
+						<li><a href="http://twitter.com/marwenhlaoui">twitter</a></li>
+						<li><a href="http://facebook.com/marwen.hlaoui.1">facebook</a></li>
+					</ul>
+				</p><hr>
+				<h4>Copyright and license</h4>
+				<p>CoderStyle is free project distributed under the terms of the MIT license.</p>
+			</div> 
+		</div>
+	</section>
+
+
+
+	<footer class="footer">
+		<div class="container">	
+			<center>
+				<small>
+					Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+					<br>
+					<p>Created with <span class="is-danger">❤</span> by <a href="">Marwen Hlaoui</a> Ⓒ 2017</p>
+				</small>
+			</center>
+		</div>
+	</footer>
+
+	<!-- JQueryCDN-->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+	<!-- coderstyle js -->
+	<script type="text/javascript" src="dist/js/js-coderstyle.min.js" ></script>
+
+	<!-- app js-->
+	<script type="text/javascript" src="assets/app.js" ></script>
+</body>
+</html>
