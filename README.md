@@ -1,11 +1,11 @@
 
-# CoderStyle
+![CoderStyle](http://coderstyle.marwenhlaoui.me/assets/coderstyle-logo.png)
 
 ### Quick start : 
 CoderStyle is syntax highlighting project for web developper , very easy to include and integrate in your awesome web application . 
 
 ### Install : 
-Very easy to include in your application , just  [download](https://github.com/marwenhlaoui/LoadImg/archive/master.zip) or clone from github
+Very easy to include in your application , just  [download](https://github.com/marwenhlaoui/CoderStyle/archive/v0.1.zip) or clone from github
 
 ```git
 git clone https://github.com/marwenhlaoui/CoderStyle.git
@@ -35,9 +35,9 @@ You will need to include the template <code>cs-monokai.min.css</code> and the sc
 </html>
 ```
 
-### [Demo](http://app.loadimg.marwenhlaoui.me/)
+### [Demo](http://coderstyle.marwenhlaoui.me/)
 
- See the [Demo](http://app.loadimg.marwenhlaoui.me/) for information on the project contents, new languages supported , templates and examples, and more.
+ See the [Demo](http://coderstyle.marwenhlaoui.me/) for information on the project contents, new languages supported , templates and examples, and more.
 
 ### License :
 

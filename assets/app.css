@@ -3,7 +3,10 @@ body{
 /*font-family: 'Russo One', sans-serif;*/
 }
 #logo img{    max-height: 3.5rem;}
-a{    color: #ffdd57;}
+a.link{
+    color: #4c421a;
+    text-shadow: 0px 0px 1px #ffdd57;
+}
 .select:after {
     border-color:#757575; 
 }

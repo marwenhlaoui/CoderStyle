@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$('.listpagecontent').find('div.is-active').show("slow");
 
 
-	$('.listpagelink li a').on('click',function(){
+	$('.listpagelink li.tab a').on('click',function(){
 		$('.listpagelink li').removeClass('is-active');
 		$(this).parent().addClass('is-active'); 
 		$('.listpagecontent div.container').hide('slow');
