@@ -211,7 +211,7 @@ html ::selection { background: #3C4043; }
 				
 <hr>
 				<h4>Using</h4>
-				<p>You will need to include the template <code>cs-monokai.min.css</code> and the script<code>coderstyle.min.js</code> files you downloaded or by cdn in your layout or pages. 
+				<p>You will need to include the template <code>cs-monokai.min.css</code> and the lib <code>jquery.min.js</code> and <code>coderstyle.min.js</code> files you downloaded or by cdn in your layout or pages. 
 				<div class="coderStyle" cs-lang="html">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -231,16 +231,47 @@ html ::selection { background: #3C4043; }
 	...
 &lt;/body&gt;
 &lt;/html&gt;
+				</div><br>
+				Next just call coderstyle function with your <code>id</code> or <code>class</code> div like :
+				<br><br> 
+				<div class="coderStyle" cs-lang="html">
+<!-- call with class -->
+<div class="demo"> ... </div>
+<div class="demo"> ... </div>
+<!-- call with id -->
+<div id="demo1"> ... </div>
+<div id="demo2"> ... </div>
+
+&lt;script type="text/javascript"&gt;
+	$('.demo').coderStyle();
+	$('#demo1').coderStyle();
+	$('#demo2').coderStyle();
+&lt;/script&gt;
+				</div>
+				<br>
+				You can specify your programming language code in div <code>cs-lang</code> or  in script function by default language : 
+				<br><br>
+				<div class="coderStyle" cs-lang="html">
+<!-- language in div -->
+<div class="demo" cs-lang="html"> ... </div>
+<!-- language in function -->
+&lt;script type="text/javascript"&gt;
+$('.demo').coderStyle({
+	'language':'html'
+});
+&lt;/script&gt;
+				</div> 
 				</div>
 				</p><hr>
 				<h4>Creators</h4>
 				<p>
-					<b>Marwen Hlaoui</b>
+					
 					<ul>
-						<li><a class="link" href="http://marwenhlaoui.me">Official website</a></li>
-						<li><a class="link" href="http://github.com/marwenhlaoui">github</a></li>
-						<li><a class="link" href="http://twitter.com/marwenhlaoui">twitter</a></li>
-						<li><a class="link" href="http://facebook.com/marwen.hlaoui.1">facebook</a></li>
+						<b>Marwen Hlaoui</b> : 
+						<li> &nbsp;  -  <a class="link" href="http://marwenhlaoui.me">Official website</a></li>
+						<li> &nbsp;  -  <a class="link" href="http://github.com/marwenhlaoui">github</a></li>
+						<li> &nbsp;  -  <a class="link" href="http://twitter.com/marwenhlaoui">twitter</a></li>
+						<li> &nbsp;  -  <a class="link" href="http://facebook.com/marwen.hlaoui.1">facebook</a></li>
 					</ul>
 				</p><hr>
 				<h4>Copyright and license</h4>
@@ -270,7 +301,7 @@ html ::selection { background: #3C4043; }
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
 	<!-- coderstyle js -->
-	<script type="text/javascript" src="dist/js/js-coderstyle.min.js" ></script>
+	<script type="text/javascript" src="dist/js/js-coderstyle.js" ></script>
 
 	<!-- app js-->
 	<script type="text/javascript" src="assets/app.js" ></script>

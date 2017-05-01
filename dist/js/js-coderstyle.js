@@ -10,15 +10,14 @@
 
     $.fn.coderStyle = function(options){ 
 
-
         var listLang = ['html','css','text'];
         var def = {};
         var div = $(this);   
         var _data = "";
         var sTage = "div";
-        var deflang = 'text';
+        var deflang = ((options != undefined)&&(options['language'] != undefined))? options['language'] : 'text' ;
         var lang = 'text'; 
-        var init = function(){
+        var init = function(){  
             div.each(function(k,item){ 
               sTage = $(item)[0].localName;
               lang = (!$.isEmptyObject($(this).attr('cs-lang')))? $(this).attr('cs-lang') : deflang ;
