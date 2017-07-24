@@ -5,31 +5,31 @@
 CoderStyle is syntax highlighting project for web developper , very easy to include and integrate in your awesome web application . 
 
 ### Install : 
-Very easy to include in your application , just  [download](https://github.com/marwenhlaoui/CoderStyle/archive/v0.1.zip) or clone from github
+Very easy to include in your application , just  [download](https://github.com/marwenhlaoui/CoderStyle/archive/master.zip) or clone from github
 
 ```git
 git clone https://github.com/marwenhlaoui/CoderStyle.git
 ```
 
 ### Using:
-You will need to include the template <code>cs-monokai.min.css</code> and the script<code>coderstyle.min.js</code> files you downloaded or by cdn in your layout or pages.
+You will need to include the style <code>coderStyle.min.css</code> and the script <code>coderStyle.min.js</code> files you downloaded or by cdn in your layout or pages.
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
 	...
-	<!-- coderstyle css template monokai -->
-	<link rel="stylesheet" type="text/css" href="dist/css/tmp/cs-monokai.min.css">
+	<!-- coderstyle css style -->
+	<link rel="stylesheet" type="text/css" href="http://coderstyle.marwenhlaoui.me/dist/css/coderStyle.min.css">
 	...
 </head>
 <body>
 	...
 	<!-- JQueryCDN-->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	...
 	<!-- coderstyle js -->
-	<script type="text/javascript" src="dist/js/js-coderstyle.js"></script>
+	<script type="text/javascript" src="http://coderstyle.marwenhlaoui.me/dist/js/coderStyle.min.js"></script>
 	...
 </body>
 </html>
