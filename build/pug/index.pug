@@ -1,0 +1,12 @@
+extend layout.pug
+block title 
+	| CoderStyle
+
+block content
+	#overview.sectionpg(style="display:block")
+		include pages/overview.pug
+	#documentation.sectionpg
+		include pages/documentation.pug
+	#download.sectionpg
+		include pages/download.pug
+

@@ -1,309 +1,271 @@
-<!DOCTYPE html>
+
 <html>
-<head>
-<title>CoderStyle</title>
-<!-- bulma cdn --> 
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
-<!-- fontawesome cdn --> 
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- coderstyle css --> 
-<link rel="stylesheet" type="text/css" href="dist/css/tmp/cs-monokai.min.css" id="stylefile">
-<!-- app css --> 
-<link rel="stylesheet" type="text/css" href="assets/app.css">
-</head>
-<body class="layout-documentation page-elements">
-<div class="container">
-	<nav class="nav">
-		<div class="nav-left"></div>
-
-		<div class="nav-center"> 
-			<a class="nav-item is-brand" href="#" id="logo"> 
-				<img src="assets/coderstyle-logo.png" alt="CoderStyle: a modern JS Code style">
-			</a>
-		</div>
-
-		<span id="nav-toggle" class="nav-toggle">
-			<span></span>
-			<span></span>
-			<span></span>
-		</span>
-
-		<div id="nav-menu" class="nav-right nav-menu">
-			<a class="nav-item" href="https://github.com/marwenhlaoui/CoderStyle">
-		      <span class="icon">
-		        <i class="fa fa-github"></i>
-		      </span>
-		    </a>
-		</div>
-	</nav>
-
-</div>
-
-<section class="hero is-warning">
-	<div class="hero-body">
-		<div class="container">
-			<div class="columns is-vcentered">
-				<div class="column">
-					<h1 class="title">CoderStyle </h1>
-					<p class="subtitle">
-						The simplest <strong>syntax highlighting</strong> for the Web
-					</p>
-				</div> 
-			</div>
-		</div>
-	</div>
-
-	<div class="hero-foot">
-		<div class="container">
-			<nav class="tabs is-boxed">
-				<ul class="listpagelink">
-					<li class="tab is-active">
-						<a href="#overview">Overview</a>
-					</li> 
-					<li class="tab">
-						<a href="#documentation">Documentation</a>
-					</li> 
-					<li class="">
-						<a href="https://github.com/marwenhlaoui/CoderStyle/archive/v0.1.zip">Download</a>
-					</li> 
-				</ul>
-			</nav>
-		</div>
-		
-	</div>
-
-	</section> 
-
-
-	<section class="section listpagecontent">
-		<div class="container is-active" id="overview">
-			<h2 class="title">Overview</h2>
-			<h3 class="subtitle">
-				Version <strong>v0.1</strong> are available now
-			</h3> 
-			<hr> 
-			<div class="content">
-				<div class="columns">
-					<div class="column is-8 cmd-code">
-
-					<div id="demoHtml" cs-lang="html" class="coderStyle loadcode">
-<!-- form by Bootstrap -->
-<form class="form-horizontal">
-  <fieldset>
-    <legend>Legend</legend>
-    <div class="form-group">
-      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-      <div class="col-lg-10">
-        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-      <div class="col-lg-10">
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Checkbox
-          </label>
+  <head>
+    <title> CoderStyle
+    </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"/>
+    <link href="dist/css/coderStyle.min.css" rel="stylesheet"/>
+    <link href="dist/css/app.min.css" rel="stylesheet"/>
+  </head>
+  <body id="app">
+    <nav class="navbar">
+      <div class="container-fluid container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#"><img src="https://s25.postimg.org/4bre8w4kf/coderstyle-logo.png"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="ion ion-social-github"></i>&nbsp; github</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">CDN <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">coderstyle.min.css</a></li>
+                <li class="divider"></li>
+                <li><a href="#">coderstyle.min.js</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </div> 
-    <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2">
-        <button type="reset" class="btn btn-default">Cancel</button>
-        <button type="submit" class="btn btn-primary">Submit</button>
+    </nav>
+    <div id="band">
+      <div class="container">
+        <h1 class="text-n2">CoderStyle</h1>
+        <p>The simplest syntax highlighting for the Web</p>
+        <ul class="topmenu">
+          <li class="active"><a class="tablink" href="#overview">Overview</a></li>
+          <li><a class="tablink" href="#documentation">Documentation</a></li>
+          <li><a class="tablink" href="#download">Download</a></li>
+        </ul>
       </div>
     </div>
-  </fieldset>
-</form>
-					</div>
-					<div  id="demoCss" cs-lang="css" class="coderStyle loadcode hide">
-/* try css */
-@import 'css-coderstyle.css';
-
-html ::selection { background: #3C4043; }
-.jscode ::-moz-selection { background: #3C4043; }
-.jscode ::selection { background: #3C4043; } 
-
-.jscode {
-    padding: 0.5em;
-    background: #141414;
-    color: white;
-    overflow: auto;
-    height: 100%; 
-    border: 3px solid transparent; 
-} 
-.jscode-tag{
-  color: #AC885B;
-}  
-.jscode-attr { 
-  color: #E0C589;
-} 
-.jscode-params{
-  color: #8F9D6A;
-}  
-					</div>
-
-					</div>
-					<div class="column is-4">   
-						<div class="field is-horizontal">
-						  <div class="field-label is-normal">
-						    <label class="label">Templates</label>
-						  </div>
-						  <div class="field-body">
-						    <div class="field is-grouped">
-						      <p class="control">
-							    <span class="select">
-							      <select id="load-template">
-									<option value="cs-monokai">Monokai</option>
-									<option value="cs-eiffel">Eiffel</option>
-									<option value="cs-solarized-light">Solarized (light)</option>
-									<option value="cs-twilight">Twilight</option>
-							      </select>
-							    </span>
-						      </p>
-						    </div> 
-						  </div>
-						</div>
-						<div class="field is-horizontal">
-						  <div class="field-label is-normal">
-						    <label class="label">Languages</label>
-						  </div>
-						  <div class="field-body">
-						    <div class="field is-grouped">
-						      <p class="control">
-							    <span class="select">
-							      <select id="load-language">
-							        <option value="html">html</option> 
-							        <option value="css">css</option> 
-							      </select>
-							    </span>
-						      </p>
-						    </div> 
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div> 
-		</div>
-
-
-		<div class="container" id="documentation">
-			<h2 class="title">Documentation</h2>
-			<h3 class="subtitle">
-				Created for everyone, everywhere. Is a free and open source forever
-			</h3> 
-			<hr> 
-			<div class="content">
-				<h4>Quick start</h4>
-				<p><strong>CoderStyle</strong> is syntax highlighting project for web developper , very easy to include and integrate in your awesome web application .
-				<br><b>Last version </b>: <span>v0.1</span>
-				<br><b>Languages supported </b>: <span>html</span> , <span>css</span>
-				<br><b>Templates available </b>: <span>Monokai</span> , <span>Eiffel</span> , <span>Solarized</span> , <span>Twilight</span> 
-				</p>
-
-				<h4>Install</h4>
-				<p>
-					Very easy to include in your application , just <a href="https://github.com/marwenhlaoui/CoderStyle/archive/v0.1.zip" class="link">download</a> or clone from github
-
-					<div class="coderStyle">git clone https://github.com/marwenhlaoui/CoderStyle.git </div>
-				</p>
-				
-<hr>
-				<h4>Using</h4>
-				<p>You will need to include the template <code>cs-monokai.min.css</code> and the lib <code>jquery.min.js</code> and <code>coderstyle.min.js</code> files you downloaded or by cdn in your layout or pages. 
-				<div class="coderStyle" cs-lang="html">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-	...
-	<!-- coderstyle css template monokai -->
-	<link rel="stylesheet" type="text/css" href="dist/css/tmp/cs-monokai.min.css">
-	...
-&lt;/head&gt;
-&lt;body&gt;
-	...
-	<!-- JQueryCDN-->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	...
-	<!-- coderstyle js -->
-	<script type="text/javascript" src="dist/js/js-coderstyle.js" ></script>
-	...
-&lt;/body&gt;
-&lt;/html&gt;
-				</div><br>
-				Next just call coderstyle function with your <code>id</code> or <code>class</code> div like :
-				<br><br> 
-				<div class="coderStyle" cs-lang="html">
-<!-- call with class -->
-<div class="demo"> ... </div>
-<div class="demo"> ... </div>
-<!-- call with id -->
-<div id="demo1"> ... </div>
-<div id="demo2"> ... </div>
-
-&lt;script type="text/javascript"&gt;
-	$('.demo').coderStyle();
-	$('#demo1').coderStyle();
-	$('#demo2').coderStyle();
-&lt;/script&gt;
-				</div>
-				<br>
-				You can specify your programming language code in div <code>cs-lang</code> or  in script function by default language : 
-				<br><br>
-				<div class="coderStyle" cs-lang="html">
-<!-- language in div -->
-<div class="demo" cs-lang="html"> ... </div>
-<!-- language in function -->
-&lt;script type="text/javascript"&gt;
-$('.demo').coderStyle({
-	'language':'html'
-});
-&lt;/script&gt;
-				</div> 
-				</div>
-				</p><hr>
-				<h4>Creators</h4>
-				<p>
-					
-					<ul>
-						<b>Marwen Hlaoui</b> : 
-						<li> &nbsp;  -  <a class="link" href="http://marwenhlaoui.me">Official website</a></li>
-						<li> &nbsp;  -  <a class="link" href="http://github.com/marwenhlaoui">github</a></li>
-						<li> &nbsp;  -  <a class="link" href="http://twitter.com/marwenhlaoui">twitter</a></li>
-						<li> &nbsp;  -  <a class="link" href="http://facebook.com/marwen.hlaoui.1">facebook</a></li>
-					</ul>
-				</p><hr>
-				<h4>Copyright and license</h4>
-				<p>CoderStyle is free project distributed under the terms of the MIT license.</p>
-			</div> 
-		</div>
- 
-
-
-	</section>
-
-
-
-	<footer class="footer">
-		<div class="container">	
-			<center>
-				<small>
-					Source code licensed <a href="http://opensource.org/licenses/mit-license.php" class="link">MIT</a>.
-					<br>
-					<p>Created with <span class="is-danger">❤</span> by <a href="http://marwenhlaoui.me" class="link">Marwen Hlaoui</a> Ⓒ 2017</p>
-				</small>
-			</center>
-		</div>
-	</footer>
-
-	<!-- JQueryCDN-->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-	<!-- coderstyle js -->
-	<script type="text/javascript" src="dist/js/js-coderstyle.js" ></script>
-
-	<!-- app js-->
-	<script type="text/javascript" src="assets/app.js" ></script>
-</body>
+    <div class="container">
+      <div class="sectionpg" id="overview" style="display:block;">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Overview</h2>
+            <p>Last version 0.2 are available now</p>
+            <hr/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="runCoderStyle" id="htmlDemo" cs-lang="html" style="display:block;">
+              <!-- form by Bootstrap-->
+              <form class="form-horizontal">
+                <fieldset>
+                  <legend>Legend</legend>
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                    <div class="col-lg-10">
+                      <input class="form-control" id="inputEmail" type="text" placeholder="Email"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label" for="inputPassword">Password</label>
+                    <div class="col-lg-10">
+                      <input class="form-control" id="inputPassword" type="password" placeholder="Password"/>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/> Checkbox
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <button class="btn btn-default" type="reset">Cancel</button>
+                      <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="runCoderStyle" id="cssDemo" cs-lang="css">
+              /* try css */
+              @import 'css-coderstyle.css';
+              html ::selection { background: #3C4043; }
+              .jscode ::-moz-selection { background: #3C4043; }
+              .jscode ::selection { background: #3C4043; }
+              .jscode {
+                  padding: 0.5em;
+                  background: #141414;
+                  color: white;
+                  overflow: auto;
+                  height: 100%;
+                  border: 3px solid transparent;
+              }
+              .jscode-tag {
+                  color: #AC885B;
+              }
+              .jscode-attr {
+                  color: #E0C589;
+              }
+              .jscode-params {
+                  color: #8F9D6A;
+              }
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="col-xs-6 control-label" for="selectTheme">Themes</label>
+              <div class="col-xs-6">
+                <select class="form-control" id="selectTheme">
+                  <option value="monokai">Monokai</option>
+                  <option value="eiffel">Eiffel</option>
+                  <option value="solarized-light">Solarized (light)</option>
+                  <option value="twilight">Twilight</option>
+                </select>
+              </div>
+            </div><br/>
+            <div class="form-group">
+              <label class="col-xs-6 control-label" for="selectLang">Languages</label>
+              <div class="col-xs-6">
+                <select class="form-control" id="selectLang">
+                  <option value="html">html</option>
+                  <option value="css">css</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sectionpg" id="documentation">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Documentation</h2>
+            <p>Created for everyone, everywhere. Is a free and open source forever</p>
+            <hr/>
+            <h3>Quick start</h3>
+            <ul>
+              <li><b>CoderStyle</b>is syntax highlighting project for web developper , very easy to include and integrate in your awesome web application . </li>
+              <li><b>Last version :</b>v0.2</li>
+              <li><b>Languages supported :</b>html , css</li>
+              <li><b>Templates available : </b>Monokai , Eiffel , Solarized , Twilight</li>
+            </ul>
+            <h4>Install</h4>
+            <p>
+               Very easy to include in your application , just <a class="tablink" href="#download">download </a>&nbsp; or clone from github</p>
+            <div class="code" cs-lang="html">git clone https://github.com/marwenhlaoui/CoderStyle.git </div>
+            <h4>Using</h4>
+            <p>You will need to include the style <code>coderStyle.min.css</code> and the lib <code>jquery.min.js</code> and <code>coderStyle.min.js</code> files you downloaded or by cdn in your layout or pages. </p>
+            <div class="code" cs-lang="html">
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              	&lt;head&gt;
+                	...
+              	<!-- coderstyle css template -->
+              	<link rel="stylesheet" type="text/css" href="coderStyle.min.css">
+              	...
+              	&lt;/head&gt;
+              &lt;body&gt;
+              	...
+              	<!-- JQuery CDN -->
+              	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+              	...
+              	<!-- coderstyle js -->
+              	<script type="text/javascript" src="coderStyle.min.js"></script>
+              	...
+              &lt;/body&gt;
+              &lt;/html&gt;
+            </div>
+            <p>Next just call coderstyle function with your <code>id</code> or <code>class</code> like : </p>
+            <div class="code" cs-lang="html">
+              <!-- call with class-->
+              <div class="demo"> ... </div>
+              <div class="demo"> ... </div>
+              <!-- call with id-->
+              <div id="demo1"> ... </div>
+              <div id="demo2"> ... </div>
+              <script type="text/javascript">
+                $(".demo").coderStyle();
+                $("#demo1").coderStyle();
+                $("#demo2").coderStyle();
+              </script>
+            </div>
+            <p>You can specify your programming language code with attribut <code>cs-lang </code>or in script function by default language : </p>
+            <div class="code" cs-lang="html">
+              <!-- language with attr-->
+              <div class="demo" cs-lang="html"> ... </div>
+              <!-- language in function-->
+              <script type="text/javascript">
+                $(".demo").coderStyle({
+                   "language":"html"
+                });
+              </script>
+            </div>
+            <p>You can also specify your template with attribut <code>cs-theme </code>or in script function by default theme : </p>
+            <div class="code" cs-lang="html">
+              <!-- template with attr-->
+              <div class="demo" cs-theme="html"> ... </div>
+              <!-- template in function-->
+              <script type="text/javascript">
+                $(".demo").coderStyle({
+                   "theme":"html"
+                });
+              </script>
+            </div>
+            <p>And you can specify your <code>in-put </code>or <code>out-put </code>code data : </p>
+            <div class="code" cs-lang="html">
+              <!-- src of code-->
+              <div id="codeData"> ... </div>
+              <!-- show code in -->
+              <div id="codeShow"> ... </div>
+              <!-- script-->
+              <script type="text/javascript">
+                $("#codeData").coderStyle({
+                   "get":".codeData"
+                   "set":".codeShow"
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sectionpg" id="download">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Download</h2>
+            <hr/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <h3 class="text-center">CDN</h3>
+            <h4>css library</h4>
+            <input class="form-control" value="coderStyle.min.css"/>
+            <h4>javascript library</h4>
+            <input class="form-control" value="coderStyle.min.js"/><br/>
+            <div class="col-xs-12">
+              <div class="col-xs-6">
+                <h4>CoderStyle v0.2</h4>
+              </div>
+              <div class="col-xs-6"><a class="btn btn-success btn-block text-center" href="">Download CoderStyle v0.2</a></div>
+            </div>
+            <div class="col-xs-12">
+              <div class="col-xs-6">
+                <h4>CoderStyle v0.1</h4>
+              </div>
+              <div class="col-xs-6"><a class="btn btn-info btn-block text-center" href="">Download CoderStyle v0.1</a></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h3>Log</h3>
+            <p><b>24/07/2017 : </b>use gulp system</p>
+            <p><b>1/04/2017 : </b>start the project</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <center><small>Source code licensed <a class="link" href="http://opensource.org/licenses/mit-license.php">MIT</a>.<br/>
+            <p>Created with <span class="love">❤</span> by <a class="link" href="http://marwenhlaoui.me">Marwen Hlaoui</a> Ⓒ 2017</p></small></center>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="dist/js/coderStyle.min.js"></script>
+    <script src="dist/js/app.min.js"></script>
+  </body>
 </html>

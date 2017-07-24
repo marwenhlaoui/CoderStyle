@@ -5,30 +5,42 @@
  *
  * Released under the MIT license - http://opensource.org/licenses/MIT
  */
-
 ;(function($){ 
 
-    $.fn.coderStyle = function(options){ 
+    $.fn.coderStyle = function(options){  
 
         var listLang = ['html','css','text'];
         var def = {};
         var div = $(this);   
         var _data = "";
         var sTage = "div";
+        var theme = ((options != undefined)&&(options['theme'] != undefined))? options['theme'] : "monokai" ;
+        var set = ((options != undefined)&&(options['set'] != undefined))? options['set'] : "" ;
+        var get = ((options != undefined)&&(options['get'] != undefined))? options['get'] : "" ;
         var deflang = ((options != undefined)&&(options['language'] != undefined))? options['language'] : 'text' ;
         var lang = 'text'; 
-        var init = function(){  
+        var init = function(){   
             div.each(function(k,item){ 
               sTage = $(item)[0].localName;
               lang = (!$.isEmptyObject($(this).attr('cs-lang')))? $(this).attr('cs-lang') : deflang ;
+              theme = (!$.isEmptyObject($(this).attr('cs-theme')))? $(this).attr('cs-theme') : theme ;
               if ($(item).length != 0) {
-                _data = $(item).html(); 
-                return $(item).html(codeSource()); 
+                
+                if (set != "") {
+                  _data = $(get).html(); 
+                  return $(set).html(codeSource()); 
+                }else{
+                  _data = $(item).html(); 
+                  return $(item).html(codeSource()); 
+                }
+
+
 
               }else{
                 return false;
               }
             });
+          div.addClass(theme);
         }
         
         var codeSource = function(){      
@@ -36,19 +48,18 @@
               convertData  = eval(lang+"Code()");
           }else{ 
               convertData = _data;
-          } 
+          }
             return "<pre class='jscode'>"+cleanSource(convertData)+"</pre>"; 
         }
 
         /* text */
         var textCode = function(){
-          Fdata = _data 
-                        .replace(/(['http'|'https']+)([\w\d\:\.\/\\\?\#]+)/g,'&link;$1$2&_end;') 
-                ;
-          convertFdata = Fdata
-                               .replace(/&link;(['http'|'https']+)([\w\d\:\.\/\\\?\#]+)&_end;/g,'<span class="jscode-attr">$1</span><span class="jscode-params">$2</span>') 
-                ; 
-          return convertFdata; 
+          convertdata = _data
+                        .replace(/</g,'&lt;')
+                        .replace(/>/g,'&gt;') 
+                ;  
+
+          return convertdata; 
         }
 
         /* html */

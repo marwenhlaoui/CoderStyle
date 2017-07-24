@@ -1,0 +1,116 @@
+.row
+	.col-md-12
+		h2 Documentation
+		p Created for everyone, everywhere. Is a free and open source forever
+		hr
+		h3 Quick start
+		ul
+			li
+				b CoderStyle
+				| is syntax highlighting project for web developper , very easy to include and integrate in your awesome web application . 
+			li
+				b Last version :
+				| v0.2
+			li
+				b Languages supported :
+				| html , css
+			li
+				b Templates available : 
+				| Monokai , Eiffel , Solarized , Twilight
+
+		h4 Install
+		p 
+			| Very easy to include in your application , just 
+			a(href="#download").tablink download 
+			| &nbsp; or clone from github
+
+		.code(cs-lang="html")
+			| git clone https://github.com/marwenhlaoui/CoderStyle.git 
+
+		h4 Using
+		p
+			| You will need to include the style 
+			code coderStyle.min.css
+			|  and the lib 
+			code jquery.min.js
+			|  and 
+			code coderStyle.min.js
+			|  files you downloaded or by cdn in your layout or pages. 
+		.code(cs-lang="html")
+			|&lt;!DOCTYPE html&gt;
+			|&lt;html&gt;
+			|	&lt;head&gt;
+			|   	...
+			| 	<!-- coderstyle css template -->
+			| 	<link rel="stylesheet" type="text/css" href="coderStyle.min.css">
+			| 	...
+			| 	&lt;/head&gt;
+			| &lt;body&gt;
+			| 	...
+			| 	<!-- JQuery CDN -->
+			| 	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+			| 	...
+			| 	<!-- coderstyle js -->
+			| 	<script type="text/javascript" src="coderStyle.min.js"></script>
+			| 	...
+			|&lt;/body&gt;
+			|&lt;/html&gt;
+		p
+			| Next just call coderstyle function with your 
+			code id
+			|  or 
+			code class
+			|  like : 
+		.code(cs-lang="html")
+			// call with class
+			.demo  ... 
+			.demo  ... 
+			// call with id
+			#demo1  ... 
+			#demo2  ... 
+			script(type='text/javascript').
+				$(".demo").coderStyle();
+				$("#demo1").coderStyle();
+				$("#demo2").coderStyle();
+		p
+			| You can specify your programming language code with attribut 
+			code cs-lang 
+			| or in script function by default language : 
+		.code(cs-lang="html")
+			// language with attr
+			.demo(cs-lang='html')  ... 
+			// language in function
+			script(type='text/javascript').
+				$(".demo").coderStyle({
+				   "language":"html"
+				});
+		p
+			| You can also specify your template with attribut 
+			code cs-theme 
+			| or in script function by default theme : 
+		.code(cs-lang="html")
+			// template with attr
+			.demo(cs-theme='html')  ... 
+			// template in function
+			script(type='text/javascript').
+				$(".demo").coderStyle({
+				   "theme":"html"
+				});
+		p
+			| And you can specify your 
+			code in-put 
+			| or 
+			code out-put 
+			| code data : 
+		.code(cs-lang="html")
+			// src of code
+			#codeData  ... 
+			// show code in 
+			#codeShow  ... 
+			// script
+			script(type='text/javascript').
+				$("#codeData").coderStyle({
+				   "get":".codeData"
+				   "set":".codeShow"
+				});
+

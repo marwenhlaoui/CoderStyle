@@ -1,0 +1,28 @@
+html
+	head
+		title 
+			block title
+		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet")
+		link(href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css",rel="stylesheet")
+		link(href="dist/css/coderStyle.min.css", rel="stylesheet")
+		link(href="dist/css/app.min.css", rel="stylesheet")
+	body#app
+		include layout/navbar.pug
+		#band
+			.container
+				h1.text-n2 CoderStyle
+				p The simplest syntax highlighting for the Web
+				ul.topmenu
+					li.active
+						a(href="#overview").tablink Overview
+					li
+						a(href="#documentation").tablink Documentation
+					li
+						a(href="#download").tablink Download
+		.container
+			block content
+		include layout/footer.pug
+		script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+		script(src="dist/js/coderStyle.min.js")
+		script(src="dist/js/app.min.js")

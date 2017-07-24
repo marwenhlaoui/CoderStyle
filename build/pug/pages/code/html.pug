@@ -1,0 +1,20 @@
+// form by Bootstrap
+form.form-horizontal
+  fieldset
+    legend Legend
+    .form-group
+      label.col-lg-2.control-label(for='inputEmail') Email
+      .col-lg-10
+        input#inputEmail.form-control(type='text', placeholder='Email')
+    .form-group
+      label.col-lg-2.control-label(for='inputPassword') Password
+      .col-lg-10
+        input#inputPassword.form-control(type='password', placeholder='Password')
+        .checkbox
+          label
+            input(type='checkbox')
+            |  Checkbox
+    .form-group
+      .col-lg-10.col-lg-offset-2
+        button.btn.btn-default(type='reset') Cancel
+        button.btn.btn-primary(type='submit') Submit
