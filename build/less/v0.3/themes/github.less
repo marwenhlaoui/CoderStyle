@@ -1,0 +1,66 @@
+/*
+* Github 
+*/
+
+/* variables */ 
+
+//background
+@color-background: #f6f8fa;
+//color
+@color-text: #032f62;
+//comment
+@color-comment: #6a737d;
+//tags
+@color-tags: #22863a;
+//attr
+@color-attr: #6f42c1;
+//param
+@color-params: @color-text;
+//type
+@color-type: #005cc5;
+//elem
+@color-elem: #005cc5;
+//selecter
+@selecter-text: @color-text;
+@selecter-bg: #C3DCFF;
+/* style */
+
+.github{
+	.jscode {
+		&::-moz-selection {
+			background: @selecter-bg;
+		}
+		&::selection {
+			background: @selecter-bg;
+		}
+		padding: 16px;
+		background: @color-background;
+		color: @color-text; 
+	    overflow: auto;
+	    font-size: 85%;
+	    line-height: 1.45; 
+	    border-radius: 3px;
+	}
+	.jscode-tag {
+		color: @color-tags;
+	}
+	.jscode-attr {
+		color: @color-attr;
+	}
+	.jscode-params {
+		color: @color-params;
+	}
+	.jscode-type {
+		color: @color-type;
+	}
+	.jscode-comment {
+		color: @color-comment;
+	}
+	.jscode-elem {
+		color: @color-elem;
+	}
+}
+
+
+
+

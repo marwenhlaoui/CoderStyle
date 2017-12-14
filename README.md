@@ -20,7 +20,7 @@ You will need to include the style <code>coderStyle.min.css</code> and the scrip
 <head>
 	...
 	<!-- coderstyle css style -->
-	<link rel="stylesheet" type="text/css" href="http://coderstyle.marwenhlaoui.me/dist/css/coderStyle.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.dev2vision.com/coderStyle/css/v0.3/coderStyle.min.css">
 	...
 </head>
 <body>
@@ -29,7 +29,7 @@ You will need to include the style <code>coderStyle.min.css</code> and the scrip
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	...
 	<!-- coderstyle js -->
-	<script type="text/javascript" src="http://coderstyle.marwenhlaoui.me/dist/js/coderStyle.min.js"></script>
+	<script type="text/javascript" src="http://cdn.dev2vision.com/coderStyle/css/v0.3/coderStyle.min.js"></script>
 	...
 </body>
 </html>

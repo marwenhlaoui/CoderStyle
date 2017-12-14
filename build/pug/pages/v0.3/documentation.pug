@@ -10,13 +10,13 @@
 				| is syntax highlighting project for web developper , very easy to include and integrate in your awesome web application . 
 			li
 				b Last version :
-				| v0.2
+				| v0.3
 			li
 				b Languages supported :
-				| html , css
+				| html , css , bash
 			li
 				b Templates available : 
-				| Monokai , Eiffel , Solarized , Twilight
+				| Monokai , Eiffel , Solarized , Twilight , Github
 
 		h4 Install
 		p 
@@ -24,8 +24,8 @@
 			a(href="#download").tablink download 
 			| &nbsp; or clone from github
 
-		.code(cs-lang="html")
-			| git clone https://github.com/marwenhlaoui/CoderStyle.git 
+		.code(cs-lang="bash")
+			| $ git clone https://github.com/marwenhlaoui/CoderStyle.git 
 
 		h4 Using
 		p
@@ -42,16 +42,16 @@
 			|	&lt;head&gt;
 			|   	...
 			| 	<!-- coderstyle css template -->
-			| 	<link rel="stylesheet" type="text/css" href="coderStyle.min.css">
+			| 	&lt;link rel="stylesheet" type="text/css" href="coderStyle.min.css"&gt;
 			| 	...
 			| 	&lt;/head&gt;
 			| &lt;body&gt;
 			| 	...
 			| 	<!-- JQuery CDN -->
-			| 	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+			| 	&lt;script type="text/javascript" src="jquery-3.1.1.min.js"&gt;&lt;/script&gt;
 			| 	...
 			| 	<!-- coderstyle js -->
-			| 	<script type="text/javascript" src="coderStyle.min.js"></script>
+			| 	&lt;script type="text/javascript" src="coderStyle.min.js"&gt;&lt;/script&gt;
 			| 	...
 			|&lt;/body&gt;
 			|&lt;/html&gt;
@@ -90,11 +90,11 @@
 			| or in script function by default theme : 
 		.code(cs-lang="html")
 			// template with attr
-			.demo(cs-theme='html')  ... 
+			.demo(cs-theme='monokai')  ... 
 			// template in function
 			script(type='text/javascript').
 				$(".demo").coderStyle({
-				   "theme":"html"
+				   "theme":"monokai"
 				});
 		p
 			| And you can specify your 

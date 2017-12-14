@@ -1,0 +1,32 @@
+.row
+	.col-md-12
+		h2 Overview
+		p Last version 0.3 are available now
+		hr
+
+.row
+	.col-md-8
+		#htmlDemo.runCoderStyle(cs-lang="html",style="display:block")
+			include ../code/html.pug
+		#cssDemo.runCoderStyle(cs-lang="css")
+			include ../code/css.pug
+		#bashDemo.runCoderStyle(cs-lang="bash")
+			include ../code/bash.pug
+	.col-md-4
+		.form-group
+			label.col-xs-6.control-label(for='selectTheme') Themes
+			.col-xs-6
+				select#selectTheme.form-control
+					option(value='monokai') Monokai
+					option(value='eiffel') Eiffel
+					option(value='solarized-light') Solarized (light)
+					option(value='twilight') Twilight
+					option(value='github') Github
+		br
+		.form-group
+			label.col-xs-6.control-label(for='selectLang') Languages
+			.col-xs-6
+				select#selectLang.form-control
+					option(value='html') html
+					option(value='css') css
+					option(value='bash') bash

@@ -1,0 +1,16 @@
+|?php
+|namespace App\Controller;
+|
+| use Mavision\Framework\Http\Controller;
+| use Mavision\Framework\Http\Request;
+|
+|// Controller class
+|class DefaultController extends Controller
+|{
+|	 //Home
+|	 public function index(Request $request){
+|
+|		$users = User::all();
+|		return view('Default:home',compact('users'));
+|	}
+|}

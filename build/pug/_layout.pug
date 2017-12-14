@@ -4,8 +4,7 @@ html
 			block title
 		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet")
 		link(href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css",rel="stylesheet")
-		link(href="dist/css/coderStyle.min.css", rel="stylesheet")
-		link(href="dist/css/app.min.css", rel="stylesheet")
+		block version-css
 	body#app
 		include layout/navbar.pug
 		#band
@@ -24,5 +23,4 @@ html
 		include layout/footer.pug
 		script(src="https://code.jquery.com/jquery-3.2.1.min.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
-		script(src="dist/js/coderStyle.min.js")
-		script(src="dist/js/app.min.js")
+		block version-js

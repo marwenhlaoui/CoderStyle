@@ -1,12 +1,18 @@
-extend layout.pug
+extend _layout.pug
 block title 
 	| CoderStyle
 
 block content
 	#overview.sectionpg(style="display:block")
-		include pages/overview.pug
+		include pages/v0.3/overview.pug
 	#documentation.sectionpg
-		include pages/documentation.pug
+		include pages/v0.3/documentation.pug
 	#download.sectionpg
-		include pages/download.pug
+		include pages/v0.3/download.pug
+block version-js
+	script(src="dist/js/v0.3/coderStyle.min.js")
+	script(src="dist/js/v0.3/app.min.js")
+block version-css
+	link(href="dist/css/v0.3/coderStyle.min.css", rel="stylesheet")
+	link(href="dist/css/v0.3/app.min.css", rel="stylesheet")
 
