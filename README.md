@@ -29,7 +29,7 @@ You will need to include the style <code>coderStyle.min.css</code> and the scrip
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	...
 	<!-- coderstyle js -->
-	<script type="text/javascript" src="http://cdn.dev2vision.com/coderStyle/css/v0.3/coderStyle.min.js"></script>
+	<script type="text/javascript" src="http://cdn.dev2vision.com/coderStyle/js/v0.3/coderStyle.min.js"></script>
 	...
 </body>
 </html>
